@@ -1,0 +1,12 @@
+.home-container {
+  position: relative;
+  min-height: 100vh;
+}
+.home-bg {
+  background-image: url('./gifs/home-sim.gif');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute; */
+  /* top: 0;/ */
+}

@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(52.9px);
+  box-shadow: 0 4px 32.6px 5px #000000ab;
+  color: #fff;
+  z-index: 10;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+  .navbar-links-container {
+    flex-direction: column;
+  }
+}
