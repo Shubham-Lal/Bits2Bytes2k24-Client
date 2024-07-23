@@ -7,7 +7,7 @@ const navlinks = [
   { tag: 'Contact', to: '/contact' },
   { tag: 'Crew', to: '/crew' },
   { tag: 'Gallery', to: '/gallery' },
-  { tag: 'Register', to: '/register' },
+  { tag: 'Sign Up', to: '/signup' },
 ]
 
 export default function Navbar() {
