@@ -1,6 +1,6 @@
 import './style.css'
 import contact_bg from '/pages/contact.png'
-import BGElement from '../../Components/BGElement/BGElement'
+import BGElement from '../../Components/BGElement'
 
 const Contact = () => {
   return (

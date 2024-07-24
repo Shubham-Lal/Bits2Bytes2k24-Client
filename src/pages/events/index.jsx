@@ -1,6 +1,6 @@
 import './style.css'
 import event_bg from '/pages/events.png'
-import BGElement from '../../Components/BGElement/BGElement'
+import BGElement from '../../Components/BGElement'
 
 const Events = () => {
   return (

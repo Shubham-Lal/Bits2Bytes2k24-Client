@@ -1,11 +1,20 @@
 import './App.css'
-import { SpeedInsights } from '@vercel/speed-insights/react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navbar from './Components/Navbar/Navbar'
+import { SpeedInsights } from '@vercel/speed-insights/react'
+import Splash from './Components/Splash'
+import Navbar from './Components/Navbar'
 import { Home, About, Crew, Events, Contact, Gallery, Signup } from './pages'
 
 export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setShowSplash(false), 2000);
+  }, []);
+
   return (
+    showSplash ? <Splash /> :
     <BrowserRouter>
       <Navbar />
       <Routes>
