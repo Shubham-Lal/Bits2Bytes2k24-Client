@@ -1,0 +1,102 @@
+.contacts-container {
+  position: fixed;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  padding: 200px 1rem 50px;
+  overflow: scroll;
+  color: #fff;
+}
+.convenors-container {
+  position: relative;
+  text-align: center;
+}
+.convenor-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-top: 10rem;
+}
+.convenor-title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.convenor-title h1 {
+  font-size: 6rem;
+}
+
+.technical-team-container {
+  position: relative;
+
+}
+
+.tech-team-header {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-team-header h1 {
+  font-size: 8rem;
+}
+.tech-team-cards {
+  display: flex;
+  overflow: scroll;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 4rem;
+}
+.tech-team-cards {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.tech-team-cards::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.google-map-cont {
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* flex-basis: auto; */
+}
+.google-map-cont h1 {
+  font-size: 1.5rem;
+}
+.google-map-cont div {
+  width: 100%;
+  height: calc(100% - 36px);
+  background-color: #fff;
+}
+
+.address-container {
+  width: 50%;
+  background-color: #d9d9d959;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.125rem;
+  min-width: 500px;
+  margin: 2rem 0;
+}
+.college-name,
+.college-phone,
+.college-website {
+  font-weight: bold;
+}
