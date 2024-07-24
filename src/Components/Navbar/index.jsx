@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className='navbar-container'>
         <div className='navbar-logo'>
           <span>
-            <img src='./images/logo.png' alt='bits2bytes-logo' />
+            <img src='/images/logo.png' alt='bits2bytes-logo' />
           </span>
           <span>Bits2Bytes 2k24</span>
         </div>

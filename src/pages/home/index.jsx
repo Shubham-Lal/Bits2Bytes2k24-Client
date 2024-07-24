@@ -1,6 +1,7 @@
 import './style.css'
 import home_bg from '/images/home-sim.gif'
 import BGElement from '../../Components/BGElement'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -19,7 +20,9 @@ const Home = () => {
                 </p>
               </div>
               <div className='hero-explore-btn-cont'>
-                <button>Explore Events</button>
+                <Link className='home-explore-btn' to='events'>
+                  Explore Events
+                </Link>
               </div>
             </div>
           </div>

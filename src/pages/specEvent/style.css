@@ -1,0 +1,17 @@
+.specific-event-title{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.specific-event-title h1{
+    color: #fff;
+    font-size: 5rem;
+    padding: 0 1rem;
+}
+.specific-event-title h1::first-letter{
+    text-transform: capitalize;
+}
