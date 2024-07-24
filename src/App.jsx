@@ -8,26 +8,38 @@ import SpecificEvent from './pages/specEvent'
 import { Home, About, Crew, Events, Contact, Gallery, Signup } from './pages'
 
 export default function App() {
-  const [showSplash, setShowSplash] = useState(true)
+  const [showSplash, setShowSplash] = useState(true);
+  const [fade, setFade] = useState('fade-in');
 
   useEffect(() => {
-    setTimeout(() => setShowSplash(false), 4000)
+    const timer1 = setTimeout(() => setFade('fade-out'), 3000);
+    const timer2 = setTimeout(() => setShowSplash(false), 3500);
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    }
   }, [])
 
-  return showSplash ? <Splash /> : (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path='events' element={<Events />} />
-        <Route path='events/:type' element={<SpecificEvent />} />
-        <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='crew' element={<Crew />} />
-        <Route path='signup' element={<Signup />} />
-        <Route path='gallery' element={<Gallery />} />
-      </Routes>
-      <SpeedInsights />
-    </BrowserRouter>
+  return showSplash ? (
+    <div className={fade}>
+      <Splash />
+    </div>
+  ) : (
+    <div className='fade-in'>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='events' element={<Events />} />
+          <Route path='events/:type' element={<SpecificEvent />} />
+          <Route path='about' element={<About />} />
+          <Route path='contact' element={<Contact />} />
+          <Route path='crew' element={<Crew />} />
+          <Route path='signup' element={<Signup />} />
+          <Route path='gallery' element={<Gallery />} />
+        </Routes>
+        <SpeedInsights />
+      </BrowserRouter>
+    </div>
   )
 }
