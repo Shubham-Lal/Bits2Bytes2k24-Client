@@ -1,6 +1,6 @@
 import './style.css'
 import home_bg from '/images/home-sim.gif'
-import BGElement from '../../Components/BGElement/BGElement'
+import BGElement from '../../Components/BGElement'
 
 const Home = () => {
   return (
