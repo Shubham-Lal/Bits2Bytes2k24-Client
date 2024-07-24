@@ -11,12 +11,10 @@ export default function App() {
   const [showSplash, setShowSplash] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setShowSplash(false), 2000)
+    setTimeout(() => setShowSplash(false), 4000)
   }, [])
 
-  return showSplash ? (
-    <Splash />
-  ) : (
+  return showSplash ? <Splash /> : (
     <BrowserRouter>
       <Navbar />
       <Routes>

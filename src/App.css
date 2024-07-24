@@ -5,15 +5,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Imprint MT Shadow';
+  src: url('/fonts/imprint-mt-shadow.ttf');
+}
+
 :root {
   --primary-font: 'IBM Plex Mono';
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'IBM Plex Mono', monospace;
 }
+
 body {
   margin: 0;
   padding: 0;
