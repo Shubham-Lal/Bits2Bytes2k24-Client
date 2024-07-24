@@ -1,5 +1,5 @@
 import './style.css'
-import event_bg from '/pages/events.png'
+import event_bg from '/pages/event.gif'
 import EventCard from '../../Components/EventCard'
 import BGElement from '../../Components/BGElement'
 import { events } from '../../utils/events'

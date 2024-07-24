@@ -1,0 +1,15 @@
+.gallery-cards {
+  display: flex;
+  overflow: scroll;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+  gap: 4rem;
+  /* padding: 4rem; */
+}
+
+.gallery-image {
+  flex-shrink: 0;
+  height: 400px;
+  width: 500px;
+}
