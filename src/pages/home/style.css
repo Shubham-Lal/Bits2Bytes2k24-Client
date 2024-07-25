@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 .home-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
+
 .home-blur-layer {
   position: absolute;
   height: 100%;
@@ -10,6 +12,7 @@
   z-index: 2;
   color: #fff;
 }
+
 .home-hero-container {
   display: flex;
   width: 100%;
@@ -22,24 +25,29 @@
   position: relative;
   width: 100%;
 }
+
 .hero-left-text {
   position: absolute;
   width: 100%;
   bottom: 0;
   padding: 0 0 4rem 4rem;
 }
+
 .hero-left p {
   font-family: 'JetBrains Mono' monospace;
 }
+
 .hero-explore-btn-cont {
   padding: 10px 0 0;
 }
+
 .home-explore-btn {
   background-color: #ffb3f366;
   border-radius: 6px;
   padding: 5px 10px;
   font-size: medium;
 }
+
 .hero-moving-txt-cont {
   color: #9296ff;
   font-size: 24px;
@@ -52,6 +60,7 @@
   padding: 60px 1rem 1rem;
   overflow: hidden;
 }
+
 .hero-right-bubbles-cont {
   height: 100%;
   width: 100%;
@@ -59,14 +68,17 @@
   justify-content: center;
   align-items: center;
 }
+
 .hero-right-centroid {
   height: 300px;
   width: 300px;
   overflow: hidden;
 }
+
 .bubble-center-logo {
   z-index: 2;
 }
+
 .hero-right img {
   position: absolute;
 }
@@ -76,6 +88,7 @@
   height: 25px;
   width: 25px;
 }
+
 .bubble-2 {
   right: 80px;
   top: 160px;
@@ -83,12 +96,14 @@
   width: 40px;
   z-index: 1;
 }
+
 .bubble-3 {
   left: 30px;
   top: 200px;
   height: 65px;
   width: 65px;
 }
+
 .bubble-4 {
   left: 60px;
   bottom: 150px;
@@ -96,6 +111,7 @@
   width: 80px;
   z-index: 3;
 }
+
 .bubble-5 {
   right: -40px;
   bottom: 40px;

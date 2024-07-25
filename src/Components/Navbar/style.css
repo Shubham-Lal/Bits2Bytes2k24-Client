@@ -2,21 +2,24 @@
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 32.6px 5px #000000ab;
   color: #fff;
   z-index: 10;
 }
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
+
 .navbar-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
+
 .navbar-links-container {
   display: flex;
   justify-content: space-between;
@@ -27,6 +30,10 @@
 
 /* Media Queries */
 @media screen and (max-width: 720px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
   .navbar-links-container {
     flex-direction: column;
   }
