@@ -1,0 +1,69 @@
+.signup-form-container {
+    width: 500px;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #ffffffCC;
+}
+
+.signup-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #365758;
+    padding-bottom: 2rem;
+}
+
+.form-input {
+    margin: 20px 0;
+}
+
+.form-input input {
+    width: 100%;
+    outline: none;
+    font-weight: 1.5rem;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-bottom: .5px solid gray;
+}
+
+.create-btn {
+    padding: 2rem 0 0;
+    width: 100%;
+}
+
+.create-btn button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #365758;
+    color: #fff;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.other-action-cont {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.login-action {
+    color: #365758;
+    text-decoration: underline;
+    font-size: 1.125rem;
+}
+
+.select-input-cont {
+    color: #9ca3af;
+    display: inline;
+}
+
+.select-input-cont select {
+    background-color: transparent;
+    outline: none;
+}
+
+.form-select-container {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+}
