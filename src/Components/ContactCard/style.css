@@ -4,20 +4,27 @@
   padding: 2rem 1rem;
   backdrop-filter: blur(50px);
 }
+
+.convenor-img-cont img,
+.convenor-img-cont .skeleton {
+  min-width: 250px;
+  min-height: 150px;
+}
+
 .convenor-name {
   font-weight: bold;
   font-size: 1.2rem;
   padding: 1rem 0;
   color: #270028;
 }
-.convenor-profession {
-}
+
 .convenor-socials {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
   padding: 1rem 0;
 }
+
 .social-link {
   height: 50px;
   width: 50px;

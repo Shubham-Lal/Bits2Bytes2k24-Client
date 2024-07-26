@@ -4,22 +4,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import Splash from './Components/Splash'
 import Navbar from './Components/Navbar'
-import Auth from './Components/Auth'
 import SpecificEvent from './pages/specEvent'
 import { Home, About, Crew, Events, Contact, Gallery, Signup } from './pages'
-import Login from './Components/Login'
-import Recover from './Components/Recover'
 
-export default function App () {
-  const [showSplash, setShowSplash] = useState(true)
-  const [fade, setFade] = useState('fade-in')
+export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
+  const [fade, setFade] = useState('fade-in');
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setFade('fade-out'), 3000)
-    const timer2 = setTimeout(() => setShowSplash(false), 3500)
+    const timer1 = setTimeout(() => setFade('fade-out'), 3000);
+    const timer2 = setTimeout(() => setShowSplash(false), 3500);
     return () => {
-      clearTimeout(timer1)
-      clearTimeout(timer2)
+      clearTimeout(timer1);
+      clearTimeout(timer2);
     }
   }, [])
 
@@ -38,11 +35,7 @@ export default function App () {
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='crew' element={<Crew />} />
-          <Route element={<Auth />}>
-            <Route path='signup' element={<Signup />} />
-            <Route path='login' element={<Login />} />
-            <Route path='recover' element={<Recover />} />
-          </Route>
+          <Route path='signup' element={<Signup />} />
           <Route path='gallery' element={<Gallery />} />
         </Routes>
         <SpeedInsights />
